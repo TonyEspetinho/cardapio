@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Espetinhos • Coronel Fabriciano - MG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="https://i.postimg.cc/90t8tJ2h/Design-sem-nome-(38).png" class="logo">
+
+        <!-- STATUS -->
+        <div id="statusLoja" class="status"></div>
+    </header>
+
+    <main class="container">
+
+        <div class="carousel">
+
+            <div class="carousel-track">
+
+                <img src="https://i.postimg.cc/fLbmgCm1/Whats-App-Image-2026-04-10-at-00-06-14.jpg">
+                <img src="https://i.postimg.cc/63Qn1cnm/Whats-App-Image-2026-04-10-at-00-06-15-(2).jpg">
+                <img src="https://i.postimg.cc/sX270m7q/Whats-App-Image-2026-04-10-at-00-06-15-(3).jpg">
+                <img src="https://i.postimg.cc/qR7yZwyP/Whats-App-Image-2026-04-10-at-00-06-15.jpg">
+
+                <!-- DUPLICAÇÃO pra loop infinito -->
+                <img src="https://i.postimg.cc/fLbmgCm1/Whats-App-Image-2026-04-10-at-00-06-14.jpg">
+                <img src="https://i.postimg.cc/63Qn1cnm/Whats-App-Image-2026-04-10-at-00-06-15-(2).jpg">
+                <img src="https://i.postimg.cc/sX270m7q/Whats-App-Image-2026-04-10-at-00-06-15-(3).jpg">
+                <img src="https://i.postimg.cc/qR7yZwyP/Whats-App-Image-2026-04-10-at-00-06-15.jpg">
+            </div>
+
+        </div>
+
+        <!-- MENU DINÂMICO -->
+        <div id="menu"></div>
+
+
+
+
+    </main>
+
+    <!-- CARRINHO -->
+    <div class="carrinho">
+
+        <div id="itens"></div>
+
+        <div class="total">
+            Total: R$ <span id="total">0</span>
+        </div>
+
+        <button onclick="abrirCheckout()">Finalizar Pedido</button>
+
+    </div>
+
+    <!-- CHECKOUT -->
+    <div class="checkout" id="checkout">
+
+        <button onclick="fecharCheckout()" style="
+  width: 100%;
+  margin-bottom: 10px;
+  background: #bfbfbf;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+">
+            Fechar
+        </button>
+
+        <input type="text" id="nome" placeholder="Seu nome">
+        <select id="bairro"></select>
+        <input type="text" id="endereco" placeholder="Endereço">
+
+        <select id="pagamento">
+            <option>Dinheiro</option>
+            <option>Pix</option>
+            <option>Cartão</option>
+        </select>
+
+        <input type="text" id="troco" placeholder="Troco para" style="display: none;">
+
+        <button onclick="enviarWhats()">Enviar Pedido</button>
+    </div>
+
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+
+    <div class="footer-mapa">
+        <h3>📍 Venha até nós!</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.02250517215234!2d-42.57752906531096!3d-19.526148487902347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa555f0cbb482f5%3A0x45bbd7689f00194b!2sTony%20Espetinhos!5e0!3m2!1spt-BR!2sbr!4v1775789463080!5m2!1spt-BR!2sbr"
+            width="100%" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        <p class="endereco-texto">
+            Tony Espetinhos • Coronel Fabriciano - MG
+        </p>
+    </div>
+
+
+    <footer class="footer">
+
+        <img src="https://i.postimg.cc/90t8tJ2h/Design-sem-nome-(38).png" class="footer-logo">
+
+        <p class="footer-desc">
+            Aqui no Tony Espetinho cada pedido sai com carinho, direto da brasa pra você — sabor de verdade! 😋🔥
+        </p>
+
+        <a href="https://wa.me/5531972042118" target="_blank" class="whatsapp-btn">
+            Falar no WhatsApp
+        </a>
+
+        <div class="footer-instagram">
+            <a href="https://www.instagram.com/tony_espetinhos/" target="_blank">
+                <span>📸 Siga no Instagram</span>
+                <strong>@tony_espetinhos</strong>
+            </a>
+        </div>
+
+        <div class="dev-sign">
+            <span>Desenvolvido por </span>
+            <a href="https://wa.me/5531998453186" target="_blank">
+                @Unicore • João Batista
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
