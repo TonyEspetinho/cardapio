@@ -4,13 +4,13 @@ const categorias = [
     nome: "🔥 Espetos",
     adicionais: true,
     itens: [
-      { nome: "Boi (Alcatra)", preco: 12 },
-      { nome: "Porco", preco: 12 },
-      { nome: "Medalhão", preco: 12 },
-      { nome: "Coração", preco: 12 },
-      { nome: "Linguiça", preco: 12 },
-      { nome: "Medalhão de Queijo", preco: 12 },
-      { nome: "Kafta com Queijo", preco: 12 },
+      { nome: "Boi (Alcatra)", preco: 13 },
+      { nome: "Porco", preco: 13 },
+      { nome: "Medalhão", preco: 13 },
+      { nome: "Coração", preco: 13 },
+      { nome: "Linguiça", preco: 13 },
+      { nome: "Medalhão de Queijo", preco: 13 },
+      { nome: "Kafta com Queijo", preco: 13 },
     ]
   },
 
