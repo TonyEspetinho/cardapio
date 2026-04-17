@@ -4,6 +4,7 @@ const categorias = [
     nome: "🔥 Espetos",
     adicionais: true,
     itens: [
+      { nome: "Medalhão de Cupim com Queijo Coalho", preco: 15 },
       { nome: "Boi (Alcatra)", preco: 13 },
       { nome: "Porco", preco: 13 },
       { nome: "Medalhão", preco: 13 },
