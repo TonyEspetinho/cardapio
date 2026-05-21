@@ -130,10 +130,10 @@ function atualizarStatusLoja() {
 
   const status = document.getElementById("statusLoja");
 
-  // TERÇA FECHADO
-  if (dia === 2) {
+  // TERÇA: fechado apenas antes das 18h
+  if (dia === 2 && horarioAtual < abre) {
     status.className = "status fechado";
-    status.innerText = "Fechado hoje. Abre quarta às 18h";
+    status.innerText = "Fechado. Abre hoje às 18h";
     return;
   }
 
